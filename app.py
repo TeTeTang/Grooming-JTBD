@@ -19,7 +19,7 @@ def load_file():
 def main():
     st.title('Grooming JTBD demo')
     data = load_file()
-    predictions, logprobs = bert_view.inference(data)
+    predictions, _ = bert_view.inference(data)
     text_list = data["text"].tolist()
     ## Optional: Write the input text and bert predictions into a dataframe
     # st.write(pd.DataFrame({
