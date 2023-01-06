@@ -1,3 +1,4 @@
+import torch 
 from torch.cuda import is_available
 
 from simpletransformers.classification import ClassificationModel, ClassificationArgs
