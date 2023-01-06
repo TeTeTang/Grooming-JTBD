@@ -3,11 +3,10 @@
 from simpletransformers.classification import ClassificationModel, ClassificationArgs
 
 model_class_map = {"ClassificationModel": "Classification Model"}
-
 # Optional model configuration
 model_args = ClassificationArgs(num_train_epochs=5)
 # Load the trained model
-loaded_model = ClassificationModel("bert", "bert_model", args=model_args)  
+loaded_model = ClassificationModel("bert", "bert_model", args=model_args, use_cuda=False)  
 
 # Inference 
 def inference(df):
